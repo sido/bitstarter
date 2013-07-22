@@ -3,6 +3,11 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
+// all environments
+app.configure(function(){
+  app.use(express.static(__dirname + '/public'));
+})
+
 app.get('/', function(request, response) {
   var page = fs.readFileSync(__dirname + '/index.html');
   response.end(page.toString());
