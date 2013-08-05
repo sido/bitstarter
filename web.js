@@ -9,7 +9,7 @@ app.configure(function () {
 })
 
 app.get('/', function (request, response) {
-	var page = fs.readFileSync(dirname + '/index.html');
+	var page = fs.readFileSync(__dirname + '/index.html');
 	response.end(page.toString());
 });
 
