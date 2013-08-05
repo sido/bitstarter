@@ -1,4 +1,4 @@
 bitstarter
 ==========
 
-Bitstarter project for Startup Engineering course
+OrderedLists.co Bitstarter project for Startup Engineering course
